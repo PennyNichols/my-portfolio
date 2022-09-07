@@ -17,8 +17,9 @@ app
     .use(bodyParser.urlencoded({ extended: false }))
     .use(bodyParser.json())
 
-    .post('/api/contact', (req, res) => {
-        database.execute(`
+    .post('/api/contact', async(req, res) => {
+        const body = req.body;
+        await database.execute(`
             INSERT INTO contact (
                 first,
                 last,
@@ -32,8 +33,12 @@ app
                 @email,
                 NOW()
             )
-            )
-        `)
+        `, {
+            first: body.first,
+            last: body.last,
+            phone: body.phone,
+            email: body.email
+        })
 
 
         res.json(req.body);
