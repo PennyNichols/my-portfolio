@@ -19,15 +19,28 @@
 </head>
 <body>
     
+    <section id="contact">
+        <form id="form" action="/api/contact" method="POST">
+            <h1>Contact Form</h1>
+            <input class="contact-input" type="text" name="first" id = "first" placeholder="First Name *" required>
+            <input class="contact-input" type="text" name="last" id = "last" placeholder="Last Name *" required>
+            <input class="contact-input" type="text" name="company" id = "company" placeholder="Company Name">
+            <input class="contact-input" type="tel" name="phone" id = "phone" placeholder="(555)-555-5555 *" required>
+            <input class="contact-input" type="email" name="email" id = "email" placeholder="example@website.com *" required>
+            <label for="service">Reason for contacting today:</label>
+            <select name="service" id="service" required>
+                <option value="" selected disabled>Please Select</option>
+                <option value="SEO Optimization">SEO Optimization</option>
+                <option value="Website Build">Website Build</option>
+                <option value="Front End Build">Front End Build</option>
+                <option value="Back End Build" disabled>Back End Build</option>
+                <option value="Database Build">Database Build</option>
+                <option value="Contract Employment">Contract Employment</option>
+                <option value="Permanent Employment">Permanent Employment</option>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </section>
 
-    <form action="/api/contact" method="POST">
-        
-        <input type="text" name="first" id = "first" placeholder="First Name" required>
-        <input type="text" name="last" id = "last" placeholder="Last Name" required>
-        <input type="tel" name="phone" id = "phone" placeholder="(555)-555-5555" required>
-        <input type="email" name="email" id = "email" placeholder="example@website.com" required>
-        <button type="submit" id="submit">Submit</button>
-    </form>
 
 <script src="main.js"></script>
 </body>
