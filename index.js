@@ -26,23 +26,27 @@ app
             INSERT INTO contact (
                 first,
                 last,
+                company,
                 phone,
                 email,
+                service,
                 added
             ) VALUES (
                 @first,
                 @last,
+                @company,
                 @phone,
                 @email,
+                @service,
                 NOW()
             )
         `, {
             first: body.first,
             last: body.last,
+            company: body.company,
             phone: body.phone,
             email: body.email,
-            address: body.address,
-            
+            service: body.service
         })
         res.json("Inquiry sent successfully!");
     })
