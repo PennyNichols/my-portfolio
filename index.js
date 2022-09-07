@@ -38,10 +38,10 @@ app
             last: body.last,
             phone: body.phone,
             email: body.email
-        })
+        });
 
 
-        res.json(req.body);
+        res.end('Inquiry sent successfully!');
     })
 
     .listen(port, () => console.log(`Server listening on port ${port}`));
