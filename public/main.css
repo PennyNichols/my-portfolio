@@ -11,6 +11,8 @@
     --boxShadowInset: 0px 2px 8px -2px rgba(0, 0, 0, 0.417);
     --mainBG: rgb(252, 245, 255);
     --sectionBG:rgb(238, 220, 247);
+    --gradientBottom: rgba(239,186,211,.8);
+    --gradientTop: rgba(161,99,245,.8);
 }
 
 *{
@@ -41,7 +43,7 @@ section{
 #hero {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(80, 39, 102, .5)0%, rgba(203, 129, 240, 0.5) 100%);
+    background: linear-gradient(var(--gradientTop)0%, var(--gradientBottom) 100%);
     background-size: cover;
     position: relative;
     left: 0;
@@ -63,7 +65,7 @@ section{
 
 #hero:before {
     content: "";
-    background: rgba(80, 39, 102, .6) linear-gradient(rgba(74, 39, 102, 0.5)0%, rgba(190, 131, 238, 0.5) 100%) repeat scroll 0% 0%;
+    background: rgba(80, 39, 102, .6) linear-gradient(var(--gradientTop)0%, var(--gradientBottom) 100%) repeat scroll 0% 0%;
     position: absolute;
     bottom: 0;
     top: 0;
