@@ -34,6 +34,16 @@ section{
     width: 100%;
 }
 
+h1, h2, h3{
+    font-family: var(--headerFont);
+    color: var(--headerText);
+}
+
+h4, h5, h6, p, a{
+    font-family: var(--contentFont);
+    color: var(--contentText);
+}
+
 .hidden{
     display:none;
 }
