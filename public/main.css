@@ -79,7 +79,7 @@ section{
     top: 0;
     left: 15px;
     right: 15px;
-    display: grid;
+    display: flex;
     text-align: center;
 }
 
