@@ -11,8 +11,8 @@
     --boxShadowInset: 0px 2px 8px -2px rgba(0, 0, 0, 0.417);
     --mainBG: rgb(252, 245, 255);
     --sectionBG:rgb(238, 220, 247);
-    --gradientBottom: rgba(239,186,211,.8);
-    --gradientTop: rgba(161,99,245,.8);
+    --gradientBottom: rgba(239,186,211,.7);
+    --gradientTop: rgba(161,99,245,.7);
 }
 
 *{
